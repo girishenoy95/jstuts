@@ -1,0 +1,49 @@
+<!--
+    Handling events in JavaScript
+-->
+<html>
+    <head>
+        <title>Handling events in JS</title>
+    </head>
+    <body>
+        <!--
+            inline alert function
+            <input type="button" id="button1" value="Click Me" onclick='alert("Hello")'>
+        -->
+        
+        <!--
+            Handling alert via events
+        -->
+        <input type="button" id="button1" value="Click me biatchh">
+        <script>
+            function clickMe(){
+                var button1;
+                button1 = document.querySelector("#button1");
+                button1.addEventListener('click',raiseAlert);
+            }
+            function raiseAlert(){
+                alert("This is an alert biatchh");
+            }
+            clickMe();
+        </script>
+        <!--
+            ** Common JavaScript events **
+            * click *
+            This event fires whenever an element is clicked.
+            * change *
+            Fires whenever an element changes (like an <input> box).
+            * keydown *
+            Fires whenever a keyboard key is pressed.
+            * DOMContentLoaded *
+            Fires when all the HTML tags have been parsed and the DOM is ready to be accessed through JavaScript.
+            * load *
+            Fires whenever the page (or an element) is fully loaded.
+            * beforeunload *
+            Fires before the page is unloaded (closed).
+            * mouseover *
+            Fires whenever the mouse moves over an element.
+            * mouseout *
+            Fires whenever the mouse moves away from an element.
+        -->
+    </body>
+</html>

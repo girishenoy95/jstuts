@@ -1,0 +1,49 @@
+<!--
+    Changing css properties via Javascript
+-->
+<html>
+    <head>
+        <title>Changing CSS properties via JS</title>
+    </head>
+    <body>
+        <!--
+            Below script will change styling at click of button
+        -->
+        <!-- 
+        <p class="hidem" style="color: aquamarine">Ya Biatchess</p>
+        <input type="button" id="but1" value="Click to change color">
+            <script>
+                function chColor(){
+                    var but1;
+                    but1 = document.querySelector("#but1");
+                    but1.addEventListener('click',changeColor);
+                }
+                function changeColor(){
+                    var hidem = document.querySelector('p.hidem');
+                    hidem.style.color = 'pink';
+                }
+                chColor();
+            </script> 
+        -->
+        <!--
+            Below script will hide content
+        -->
+        <p class="hidem" style="color: aquamarine">Ya Biatchess</p>
+        <input type="button" id="but1" value="Click to Hide text" onclick="hideP()">
+        <script>
+            function hideP(){
+                var hidem;
+                hidem = document.querySelector('p.hidem');
+                hidem.style.display = 'none';
+            }
+        </script>
+        <!--
+            In case of attributes having joint name like text-decoration, we need to define them in script as textDecoration or in simple terms in camelCase
+            // Change the CSS text-decoration property
+            firstParagraph.style.textDecoration = 'underline';
+
+            // Change the CSS padding-left property
+            firstParagraph.style.paddingLeft = '10px';
+        -->
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+    Accessing HTML element from js
+-->
+
+<html>
+    <head>
+        <title>Accessing HTML element from js</title>
+    </head>
+    <body>
+        <!--
+            Basic
+        -->
+        <input type="text" id="rmb" value="rumbanella">
+        <script>
+            var val = document.querySelector('#rmb');
+        </script>
+        <!--
+            Using query selector to find elements inside elements
+        -->
+        <form id="loginform">
+                <input type="text" id="rtp" value="rotipoti">
+        </form>
+        <script>
+            var val1 = document.querySelector("#loginform");
+            var val2 = val1.querySelector("#rtp");
+        </script>
+        <!--
+            Other (older) methods for getting elements from the DOM
+            * document.getElementById('theId');
+            * document.getElementsByTagName('ul');
+            * document.getElementsByClassName('theClass');
+        -->
+    </body>
+</html>

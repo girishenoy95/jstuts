@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Basics of Javascript </title>
+    </head>
+    <body>
+        <form method="GET" action="#">
+            <input type="button" id="myButton" value="ClickMe">
+            <script>
+                function setupButton(){
+                    var myButton;
+                    myButton = document.querySelector('#myButton');
+                    myButton.addEventListener('click',showAlert)
+                }
+                function showAlert(){
+                    alert('This is an alert');
+                }
+                setupButton();
+            </script>
+        </form>
+    </body>
+</html>
