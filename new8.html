@@ -1,0 +1,63 @@
+<!-- 
+    Playing around with loops 
+-->
+<!--  ** WHILE LOOP **
+    var myArray = [ 'Alice', 'Bob', 'Charlie' ];
+    var length = myArray.length;
+    // Our current index in the array
+    var index = 0;
+
+    // Loop through every item in the array
+    while (index < length) {
+        var item = myArray[index];
+
+        alert( item );
+
+        // increment index by 1 each time we loop
+        index = index + 1;
+    }
+-->
+<!-- ** FOR LOOP **  
+    var myArray = [ 'Alice', 'Bob', 'Charlie' ];
+    var length = myArray.length;
+
+    for (var i = 0; i < length; i++) {
+        var item = myArray[i];
+
+        alert( item );
+    }
+-->
+<!-- ** DO..WHILE ** 
+    var myArray = [ 'Alice', 'Bob', 'Charlie' ];
+    var length = myArray.length;
+    var index = 0;
+
+    do{
+        alert(myarray[index]);
+        index+=1;
+    }while(index<length);
+-->
+<!-- ** CONTINUE KEYWORD..SKIPPING SOME ITEMS IN A LOOP 
+    for (var i = 0; i < length; i++) {
+    var item = myArray[i];
+
+    // If item equals 'Ashley', skip to the next list item
+    if (item  == 'Ashley') {
+        continue;
+    }
+
+    alert( item );
+    }
+-->
+<!-- BREAK KEYWORD..BREAKING OUT OF A LOOP ** 
+    for (var i = 0; i < length; i++) {
+    var item = myArray[i];
+
+    // Exit the loop early if item equals 'Bernard'
+    if (item  == 'Bernard') {
+        break;
+    }
+
+    alert( item );
+    }
+-->
